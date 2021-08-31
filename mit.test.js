@@ -1,5 +1,10 @@
 var utils  = require('course-utilities');
-var mit = utils.load('./mit.js', 'mit');
+
+// if npm test is been called from "mitfacts":
+// var mit = utils.load('./mit.js', 'mit');
+
+// if npm test is been called from "mit forks", path is relative to folder from which jest (npm test) is been called:
+var mit = utils.load('./mitfacts/mit.js', 'mit');
 
 describe('MIT', () => {
 
